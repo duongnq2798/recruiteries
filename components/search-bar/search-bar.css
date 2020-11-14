@@ -1,0 +1,102 @@
+body {
+  font-family: "Muli", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+hr {
+  border-top: 2px dashed #e8e8e8;
+}
+select {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+.search-bar-section {
+  background: #e7eeef;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.search-bar-section .input-part .form-control {
+  padding: 1.4em;
+  border: none;
+  border-right: 1px solid #ced4da;
+  height: 100%;
+}
+.search-bar-section .input-part .form-control::placeholder {
+  font-family: "Muli", sans-serif;
+  font-weight: 100;
+  font-size: 0.875em;
+  color: #a8a8a8;
+}
+.search-bar-section .input-part-btn {
+  margin-left: 1px;
+  height: 100%;
+}
+.search-bar-section .input-part-btn .btn-light {
+  padding: 1.4em;
+  border: none;
+  border-radius: 0;
+  background-color: #ffffff;
+  font-size: 0.875em;
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
+  height: 100%;
+}
+.search-bar-section .input-part-btn .btn-light .control-text {
+  margin-right: 5px;
+}
+.search-bar-section .input-part-btn .btn-light::after {
+  border: 2px solid #333333;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+.search-bar-section .input-part-btn .btn-search {
+  background-color: #1aa94c;
+  border-radius: 0 4px 4px 0;
+  padding-right: 1.4em;
+  padding-left: 1.4em;
+  height: 100%;
+}
+.search-bar-section .input-part-btn .btn-search .img-search {
+  width: 0.8em;
+}
+.search-bar-section .input-part-btn .btn-search .search-txt {
+  display: none;
+}
+.search-bar-section .list-content-part {
+  margin-top: 15px;
+}
+.search-bar-section .list-content-part .list-part {
+  color: #1aa94c;
+  font-weight: 500;
+  margin-right: 15px;
+  line-height: 1.8em;
+  font-size: 0.9em;
+}
+@media only screen and (min-width: 768px) {
+  .search-bar-section .input-part-btn .btn-light {
+    padding-right: 4em;
+    padding-left: 4em;
+    font-weight: 600;
+  }
+  .search-bar-section .input-part-btn .btn-search {
+    padding-right: 2em;
+    padding-left: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-bar-section .input-part-btn .btn-search .search-txt {
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 16px;
+  }
+}

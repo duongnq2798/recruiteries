@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Search Bar</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="search-bar.css" />
+  </head>
+  <body>
+    <section class="search-bar-section">
+      <div class="container">
+        <div class="row">
+          <div class="input-group col-12 input-part">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Find job for refer"
+              aria-label="Recipient's username with two button addons"
+              aria-describedby="button-addon4"
+            />
+            <div class="input-group-append input-part-btn" id="button-addon4">
+              <div class="dropdown">
+                <button
+                  class="btn btn-light dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="control-text">Hồ Chí Minh</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Hà Nội</a>
+                  <a class="dropdown-item" href="#">Đà Nẵng</a>
+                  <a class="dropdown-item" href="#">Nha Trang</a>
+                </div>
+              </div>
+              <button class="btn btn-search" type="button">
+                <img
+                  class="img-search"
+                  src="../../assets/img/search-icon-large.png"
+                  alt="search-icon"
+                />
+                <a href="#" class="search-txt">Search</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 list-content-part">
+            <a href="#" class="list-part">IOS</a>
+            <a href="#" class="list-part">Android</a>
+            <a href="#" class="list-part">Lorem Ipsum</a>
+            <a href="#" class="list-part">Lorem Ipsum</a>
+            <a href="#" class="list-part">Lorem Ipsum</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

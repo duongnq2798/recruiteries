@@ -1,0 +1,63 @@
+@import url("../../assets/css/_general.less");
+
+
+.footer { // .footer
+    background: @bg-color-1;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    &-content{  
+      margin-bottom: 50px;
+      .first-footer { 
+        display: flex;
+        justify-content: center;
+        &-img{ 
+          &-detail{ 
+            margin-right: 15px;
+          }
+        }
+        .recruitery-img{
+          margin-bottom: 32px;
+        }
+      }
+      .fe-main { 
+        color: @color-text-3;
+        font-weight: 800;
+        margin-bottom: 32px;
+      }
+      .fe-text {  // .fe-text
+        font-size: 0.9em;
+        color: @color-text-6;
+        &:nth-child(2) {
+          margin-top: 30px;
+        }
+      }
+     
+    }
+    .heading-ranglehr { 
+      border-top: 2px dashed @color-text-1;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .contact-footer {
+      &-content{ 
+        font-size: 0.875em;
+        color: @color-text-6;
+        text-align: center;
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {  
+        padding-bottom: 80px;
+        &-content { 
+          display: flex;
+          justify-content: center;
+        }
+    }
+}

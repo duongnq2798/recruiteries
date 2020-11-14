@@ -1,0 +1,124 @@
+body {
+  font-family: "Muli", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+hr {
+  border-top: 2px dashed #e8e8e8;
+}
+select {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+}
+.header-wrapper-img {
+  margin-bottom: 14px;
+}
+.header-wrapper-login {
+  border-radius: 4px;
+  padding: 10px 32px;
+  background-color: #1aa94c;
+  color: white;
+  margin-bottom: 18px;
+}
+.header-wrapper .row {
+  border-top: 1px solid #cdd6d8;
+  border-bottom: 1px solid #cdd6d8;
+  width: 100vw;
+}
+.header-wrapper .row-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-wrapper .row-list-tuple {
+  float: left;
+  border-right: 1px solid #cdd6d8;
+  flex: 1 1 auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: center;
+}
+.header-wrapper .row-list-tuple:first-of-type {
+  justify-content: center;
+}
+.header-wrapper .row-list-tuple:last-of-type {
+  border-right: none;
+  justify-content: center;
+}
+.header-wrapper .row-list-tuple-down {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+.header-wrapper .row-list-tuple .ic-arrow {
+  margin-left: 5px;
+  pointer-events: none;
+  padding-right: 5px;
+}
+.header-wrapper .row-list .together {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333333;
+}
+.header-wrapper .row-list .employer-img {
+  margin-right: 8px;
+}
+@media only screen and (min-width: 570px) {
+  .header-wrapper .row {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header-wrapper {
+    justify-content: flex-end;
+  }
+  .header-wrapper .logo {
+    margin-right: auto;
+  }
+  .header-wrapper .ic-search {
+    display: none;
+  }
+  .header-wrapper-login {
+    order: 3;
+  }
+  .header-wrapper .row {
+    border-top: none;
+    border-bottom: none;
+    width: auto;
+    margin-bottom: 14px;
+    width: 60%;
+  }
+  .header-wrapper .row-list-tuple:first-of-type {
+    justify-content: center;
+  }
+  .header-wrapper .row-list-tuple:last-of-type {
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 989px) {
+  .header-wrapper .row {
+    width: 45%;
+  }
+}

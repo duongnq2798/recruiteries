@@ -1,0 +1,95 @@
+@import url("../../assets/css/_general.less");
+
+
+.search-bar-section {
+  background: #e7eeef;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .input-part {
+    .form-control {
+      padding: 1.4em;
+      border: none;
+      border-right: 1px solid #ced4da;
+      height: 100%;
+      &::placeholder {
+        font-family: @font-family;
+        font-weight: 100;
+        font-size: 0.875em;
+        color: @color-text-2;
+      }
+    }
+    &-btn {
+      margin-left: 1px;
+      height: 100%;
+      .btn-light {
+        padding: 1.4em;
+        border: none;
+        border-radius: 0;
+        background-color: @color-white;
+        font-size: 0.875em;
+        font-family: @font-family;
+        font-weight: 400;
+        height: 100%;
+        .control-text{
+          margin-right: 5px;
+        }
+        &::after {
+          border: 2px solid @color-text-3;
+          border-width: 0 1px 1px 0;
+          display: inline-block;
+          padding: 3px;
+          transform: rotate(45deg);
+        }
+      }
+      .btn-search {
+        background-color: @color-primary;
+        border-radius: 0 4px 4px 0;
+        padding-right: 1.4em;
+        padding-left: 1.4em;
+        height: 100%;
+        .img-search { //.img-search
+          width: 0.8em;
+        }
+        .search-txt {
+          display: none;
+        }
+      }
+    }
+  }
+  .list-content-part {
+    margin-top: 15px;
+    .list-part{ //.list-part
+      color: @color-primary;
+      font-weight: 500;
+      margin-right: 15px;
+      line-height: 1.8em;
+      font-size: 0.9em;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search-bar-section {
+    .input-part {
+      &-btn {
+        .btn-light {
+          padding-right: 4em;
+          padding-left: 4em;
+          font-weight: 600;
+        }
+        .btn-search {
+          padding-right: 2em;
+          padding-left: 2em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .search-txt {
+            display: inline-block;
+            color: @color-white;
+            margin-left: 16px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+body {
+  font-family: "Muli", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+hr {
+  border-top: 2px dashed #e8e8e8;
+}
+select {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}

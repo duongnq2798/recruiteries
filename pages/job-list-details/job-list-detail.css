@@ -1,0 +1,488 @@
+body {
+  font-family: "Muli", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+hr {
+  border-top: 2px dashed #e8e8e8;
+}
+select {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+/** COMPONENTS **/
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+}
+.header-wrapper-img {
+  margin-bottom: 14px;
+}
+.header-wrapper-login {
+  border-radius: 4px;
+  padding: 10px 32px;
+  background-color: #1aa94c;
+  color: white;
+  margin-bottom: 18px;
+}
+.header-wrapper .row {
+  border-top: 1px solid #cdd6d8;
+  border-bottom: 1px solid #cdd6d8;
+  width: 100vw;
+}
+.header-wrapper .row-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-wrapper .row-list-tuple {
+  float: left;
+  border-right: 1px solid #cdd6d8;
+  flex: 1 1 auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: center;
+}
+.header-wrapper .row-list-tuple:first-of-type {
+  justify-content: center;
+}
+.header-wrapper .row-list-tuple:last-of-type {
+  border-right: none;
+  justify-content: center;
+}
+.header-wrapper .row-list-tuple-down {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+.header-wrapper .row-list-tuple .ic-arrow {
+  margin-left: 5px;
+  pointer-events: none;
+  padding-right: 5px;
+}
+.header-wrapper .row-list .together {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333333;
+}
+.header-wrapper .row-list .employer-img {
+  margin-right: 8px;
+}
+@media only screen and (min-width: 570px) {
+  .header-wrapper .row {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header-wrapper {
+    justify-content: flex-end;
+  }
+  .header-wrapper .logo {
+    margin-right: auto;
+  }
+  .header-wrapper .ic-search {
+    display: none;
+  }
+  .header-wrapper-login {
+    order: 3;
+  }
+  .header-wrapper .row {
+    border-top: none;
+    border-bottom: none;
+    width: auto;
+    margin-bottom: 14px;
+    width: 60%;
+  }
+  .header-wrapper .row-list-tuple:first-of-type {
+    justify-content: center;
+  }
+  .header-wrapper .row-list-tuple:last-of-type {
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 989px) {
+  .header-wrapper .row {
+    width: 45%;
+  }
+}
+.job-list-section .job-wrapper {
+  padding-bottom: 100px;
+  padding-top: 32px;
+  border-bottom: 1px dashed #cdd6d8;
+}
+.job-list-section .job-wrapper .job-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.job-list-section .job-wrapper .job-container .job-content {
+  min-width: 100%;
+  border-radius: 4px;
+  padding: 20px 16px;
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid #d4d4d4;
+}
+.job-list-section .job-wrapper .job-container .job-content .job-logo {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+}
+.job-list-section .job-wrapper .job-container .job-content .job-detail {
+  max-width: 74%;
+  padding-left: 37px;
+}
+.job-list-section .job-wrapper .job-container .job-content .job-detail .title-detail {
+  color: #1aa94c;
+  font-size: 1.125em;
+  font-weight: bold;
+}
+.job-list-section .job-wrapper .job-container .job-content .job-detail .detail-content {
+  margin-bottom: 0.5em;
+}
+.job-list-section .job-wrapper .job-container .job-content .job-detail .detail-content .content-text {
+  color: #073d05;
+  font-size: 10px;
+  border-radius: 0.9em;
+  background: #b8f6c2;
+  padding: 2px 12px;
+  white-space: nowrap;
+  font-family: "Quicksand", sans-serif;
+}
+.job-list-section .job-wrapper .job-container .job-content .job-detail .detail-content-2 {
+  font-size: 0.75em;
+  color: #333333;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.job-list-section .job-wrapper .job-container .job-content .job-detail .detail-content-3 {
+  white-space: nowrap;
+  font-size: 1.25em;
+  color: #333333;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.job-list-section .job-wrapper .job-container .job-content .job-detail .detail-content-3 .small {
+  font-size: 0.75em;
+}
+.job-list-section .job-wrapper .job-container .job-content .job-urgent {
+  text-transform: uppercase;
+  position: absolute;
+  right: 16px;
+  top: 20px;
+  color: #f5f2f2;
+  white-space: nowrap;
+  font-size: 0.625em;
+  font-family: "Quicksand", sans-serif;
+  padding: 0.3em 0.9em;
+  background: #ff5a5f;
+  border-radius: 14px;
+  text-decoration: none;
+}
+.job-list-section .job-wrapper .job-container .job-content .job-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  margin-top: 18px;
+  color: #1aa94c;
+  white-space: nowrap;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+.job-list-section .job-wrapper .job-view {
+  display: flex;
+  justify-content: center;
+}
+.job-list-section .job-wrapper .job-view .view-taga {
+  margin-top: 12px;
+  display: inline-block;
+  padding: 16px 40px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #1aa94c;
+  border-radius: 4px;
+}
+.job-list-section .job-wrapper .job-view .view-taga:hover {
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (min-width: 989px) {
+  .job-list-section .job-wrapper .job-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .job-list-section .job-wrapper .job-container .job-content {
+    min-width: 51.5%;
+  }
+  .job-list-section .job-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+  }
+}
+.footer {
+  background: #e7eeef;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+.footer-content {
+  margin-bottom: 50px;
+}
+.footer-content .first-footer {
+  display: flex;
+  justify-content: center;
+}
+.footer-content .first-footer-img-detail {
+  margin-right: 15px;
+}
+.footer-content .first-footer .recruitery-img {
+  margin-bottom: 32px;
+}
+.footer-content .fe-main {
+  color: #333333;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+.footer-content .fe-text {
+  font-size: 0.9em;
+  color: #717171;
+}
+.footer-content .fe-text:nth-child(2) {
+  margin-top: 30px;
+}
+.footer .heading-ranglehr {
+  border-top: 2px dashed #cdd6d8;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer .contact-footer-content {
+  font-size: 0.875em;
+  color: #717171;
+  text-align: center;
+}
+.footer .contact-footer-content:last-of-type {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 80px;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: center;
+  }
+}
+/** END COMPONENTS **/
+hr {
+  border-top: 2px dashed #e8e8e8;
+}
+.ss-product {
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ss-product .product-point .title-product .urgent a {
+  padding: 5px 14px 4px 14px;
+  border-radius: 14px;
+  font-size: 0.625em;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #ff5a5f;
+}
+.ss-product .product-point .title-product h2 {
+  color: #333333;
+  font-size: 2em;
+  font-weight: bold;
+}
+.ss-product .product-point .title-product .az-text span {
+  padding: 1px 12px;
+  font-size: 0.625em;
+  color: #065d02;
+  font-weight: 800;
+  border-radius: 8px;
+  background: #f5f2f2;
+}
+.ss-product .product-point .price-lead {
+  margin-bottom: 70px;
+}
+.ss-product .product-point .price-lead .cost-container {
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.ss-product .product-point .price-lead .cost-container .price-product .title-cost {
+  font-size: 1.75em;
+  color: #333333;
+  font-weight: bold;
+}
+.ss-product .product-point .price-lead .cost-container .price-product .title-cost span {
+  font-size: 0.5em;
+}
+.ss-product .product-point .price-lead .cost-container .price-product span img {
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+.ss-product .product-point .price-lead .cost-container .price-product span small {
+  font-weight: 550;
+}
+.ss-product .product-point .price-lead .cost-container .lead-time p {
+  font-size: 0.875em;
+}
+.ss-product .product-point .price-lead .cost-container .button-job {
+  padding-top: 32px;
+  display: flex;
+}
+.ss-product .product-point .price-lead .cost-container .button-job .download {
+  text-align: center;
+  width: 50%;
+  margin-right: 10px;
+  font-size: 0.9375em;
+  font-weight: bold;
+  color: #1aa94c;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  border: 1px solid #1aa94c;
+  border-radius: 4px;
+}
+.ss-product .product-point .price-lead .cost-container .button-job .refer-jd {
+  text-align: center;
+  width: 50%;
+  font-size: 0.9375em;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  background: #1aa94c;
+  border: 1px solid #1aa94c;
+  border-radius: 4px;
+}
+.ss-product .product-point .feature {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ss-product .product-point .feature .fe-detail {
+  width: 50%;
+  margin-bottom: 40px;
+}
+.ss-product .product-point .feature .fe-detail p img {
+  margin-right: 5px;
+}
+.ss-product .product-point .feature .fe-detail p span {
+  font-size: 0.875em;
+  color: #333333;
+  font-weight: 550;
+}
+.ss-product .product-point .feature .fe-detail strong {
+  font-size: 1.125;
+  color: #333333;
+  font-weight: 750;
+}
+.ss-product .product-point .benefit h1 {
+  font-size: 1.25em;
+  color: #333333;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.ss-product .product-point .benefit .benefit-container {
+  display: flex;
+}
+.ss-product .product-point .benefit .benefit-container .benefit-content {
+  width: 50%;
+}
+.ss-product .product-point .benefit .benefit-container .benefit-content p img {
+  margin-right: 20px;
+}
+.ss-product .product-point .benefit .benefit-container .benefit-content p span {
+  font-size: 0.875em;
+  font-weight: 450;
+}
+.ss-main {
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ss-main-content .main-content span {
+  color: #333333;
+  font-size: 1.25em;
+  font-weight: 750;
+}
+.ss-main-content .main-content p {
+  font-size: 0.875em;
+  color: #333333;
+  font-weight: 450;
+}
+@media only screen and (max-width: 600px) {
+  .ss-product {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .ss-product .product-point .benefit .benefit-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ss-product .product-point .benefit .benefit-container .benefit-content {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .ss-product {
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .ss-product .product-point .feature {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ss-product .product-point .feature .fe-detail {
+    width: 25%;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .ss-product .product-point {
+    position: relative;
+  }
+  .ss-product .product-point .title-product {
+    width: 55%;
+  }
+  .ss-product .product-point .price-lead {
+    float: right;
+    width: 45%;
+    transform: translateY(-36%);
+  }
+  .ss-product .product-point .feature {
+    width: 50%;
+  }
+  .ss-product .product-point .benefit {
+    width: 50%;
+  }
+  .ss-main-content {
+    width: 50%;
+  }
+}

@@ -1,0 +1,73 @@
+body {
+  font-family: "Muli", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+hr {
+  border-top: 2px dashed #e8e8e8;
+}
+select {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+.footer {
+  background: #e7eeef;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+.footer-content {
+  margin-bottom: 50px;
+}
+.footer-content .first-footer {
+  display: flex;
+  justify-content: center;
+}
+.footer-content .first-footer-img-detail {
+  margin-right: 15px;
+}
+.footer-content .first-footer .recruitery-img {
+  margin-bottom: 32px;
+}
+.footer-content .fe-main {
+  color: #333333;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+.footer-content .fe-text {
+  font-size: 0.9em;
+  color: #717171;
+}
+.footer-content .fe-text:nth-child(2) {
+  margin-top: 30px;
+}
+.footer .heading-ranglehr {
+  border-top: 2px dashed #cdd6d8;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer .contact-footer-content {
+  font-size: 0.875em;
+  color: #717171;
+  text-align: center;
+}
+.footer .contact-footer-content:last-of-type {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 80px;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: center;
+  }
+}

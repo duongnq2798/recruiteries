@@ -1,0 +1,335 @@
+@import url("../../assets/css/_general.less");
+
+
+
+/** COMPONENTS **/
+// ** HEADER  **//
+.header {  
+  &-wrapper {   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    &-img {   
+      margin-bottom: 14px;
+    }
+    &-login {
+      border-radius: 4px;
+      padding: 10px 32px;
+      background-color: @color-primary;
+      color: white;
+      margin-bottom: 18px;
+     
+    }
+    .row {
+      border-top: 1px solid @color-text-1;
+      border-bottom: 1px solid @color-text-1;
+      width: 100vw;
+      &-list{ 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &-tuple{  
+          float: left;
+          border-right: 1px solid @color-text-1;
+          flex: 1 1 auto;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          display: flex;
+          justify-content: center;
+          &:first-of-type {
+            justify-content: center;
+          }
+          &:last-of-type {
+            border-right: none;
+            justify-content: center;
+          }
+          &-down{  
+            border: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+          }
+          .ic-arrow {  
+            margin-left: 5px;
+            pointer-events: none;
+            padding-right: 5px;
+          }
+        }
+        .together {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: @color-text-3;
+        }
+        .employer {
+          &-img {  
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 570px) {
+  .header { 
+    &-wrapper {
+      .row {
+        border-top: none;
+        border-bottom: none;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    &-wrapper { 
+      justify-content: flex-end;
+      .logo {
+        margin-right: auto;
+      }
+      .ic-search {
+        display: none;
+      }
+      &-login {
+        order: 3;
+      }
+      .row {
+        border-top: none;
+        border-bottom: none;
+        width: auto;
+        margin-bottom: 14px;
+        width: 60%;
+        &-list{
+          &-tuple{
+            &:first-of-type {
+              justify-content: center;
+            }
+            &:last-of-type {
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+} 
+@media only screen and (min-width: 989px) {
+  .header { 
+    &-wrapper {  
+      .row {
+        width: 45%;
+      }
+    }
+  } 
+}
+// ** END HEADER  **//
+
+//** CLIENT **/
+.client-section {
+  padding-top: 100px;
+  .title-section {
+    font-weight: bold;
+    font-size: 2.625em;
+    color: @color-text-3;
+    text-align: center;
+    margin-bottom: 1.125em;
+  }
+  .title-content{
+    text-align: center;
+    font-size: 1em;
+    color: @color-text-3;
+    margin-bottom: 46px;
+  }
+  .client-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-img {
+      //&-img
+      width: 86px;
+      height: 86px;
+      margin-bottom: 34px;
+    }
+    &-title {
+      //&-title
+      font-weight: bold;
+      font-size: 1.125em;
+      margin-bottom: 6px;
+    }
+    &-content {
+      // &-content
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    &-detail {
+      //&-detail
+      font-size: 0.875em;
+      max-width: 64%;
+      margin-bottom: 66px;
+      text-align: center;
+    }
+  }
+  .join-team{
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    a {
+      margin-top: 12px;
+      display: inline-block;
+      padding: 16px 40px;
+      font-weight: bold;
+      color: @color-white;
+      background-color: @color-primary;
+      border-radius: 4px;
+      &:hover {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .client-section {
+    .title-section {
+      // title-section
+      margin-bottom: 0.5em;
+    }
+    .title-content {
+      //  //title-content
+      margin-bottom: 100px;
+    }
+  }
+}
+//** END CLIENT **//
+
+// ** FOOTER  **//
+.footer { // .footer
+  background: @bg-color-1;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  &-content{  
+    margin-bottom: 50px;
+    .first-footer { 
+      display: flex;
+      justify-content: center;
+      &-img{ 
+        &-detail{ 
+          margin-right: 15px;
+        }
+      }
+      .recruitery-img{
+        margin-bottom: 32px;
+      }
+    }
+    .fe-main { 
+      color: @color-text-3;
+      font-weight: 800;
+      margin-bottom: 32px;
+    }
+    .fe-text {  // .fe-text
+      font-size: 0.9em;
+      color: @color-text-6;
+      &:nth-child(2) {
+        margin-top: 30px;
+      }
+    }
+   
+  }
+  .heading-ranglehr { 
+    border-top: 2px dashed @color-text-1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .contact-footer {
+    &-content{ 
+      font-size: 0.875em;
+      color: @color-text-6;
+      text-align: center;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {  
+      padding-bottom: 80px;
+      &-content { 
+        display: flex;
+        justify-content: center;
+      }
+  }
+}
+// ** END FOOTER  **//
+/** END COMPONENTS **/
+
+
+.ss {
+    &-banner{
+        background-image: url("../../assets/img/banner-about-2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 370px;
+        width: 100%;
+    }
+    &-great{
+        &-title{
+            margin: 100px auto 24px;
+            min-width: 45%;
+            text-align: center;
+            font-size: 2.625em;
+            color: @color-text-3;
+            font-weight: bold;
+        }
+        &-content{
+            margin: 0px auto 200px;
+            min-width: 67%;
+            font-size: 1em;
+            color: @color-text-3;
+            text-align: center;
+        }
+    }
+    &-men{
+      .img-men{ 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 200px;
+      }
+    }
+}
+
+
+@media only screen and (min-width: 320px){
+  .ss{
+    &-banner{
+      background-position-x: 50%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    .ss {
+        &-great{
+            &-title{
+                max-width: 45%;
+            }
+            &-content{
+                max-width: 67%;
+            }
+        }
+    }
+  }
+
+

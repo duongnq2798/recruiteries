@@ -1,0 +1,19 @@
+/*
+Lưu ý:
+
+- Hiện tại có một số file ảnh và logo không thể lấy được từ file thiết kế
+Nên em dùng một số hình ảnh thay thế bằng công cụ Snipping Tool nên hình ảnh và chất
+lượng không thể bằng Design
+
+- Trong thư mục refferer có ảnh sitting-men.png được thay thế tam thời
+do không lấy được hình ảnh gốc từ file Design
+
+
+
+
+
+
+
+
+
+*/
